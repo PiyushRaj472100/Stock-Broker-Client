@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.light {
+  background-color: #f5f6fa;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  15% { opacity: 1; transform: translateY(0); }
+  85% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(20px); }
+}
