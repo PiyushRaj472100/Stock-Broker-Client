@@ -1,16 +1,86 @@
-# React + Vite
+# 📌 Stock Broker Client Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, visually appealing stock monitoring dashboard built using **React + Vite**, featuring real-time price updates, persistent login, animations, and a clean user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo  
+(Coming Soon)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### **Dashboard – Subscribed Stocks**
+![Dashboard](./screenshots/gdash.png)
+
+
+
+
+## ✨ Features
+
+### 🔐 User Authentication  
+- Login using email  
+- Auto-load previous subscriptions  
+- Persistent login using LocalStorage  
+
+### 📈 Real-Time Stock Price Updates  
+- Updates every 1 second  
+- Uses random generator to simulate real feed  
+- Smooth transitions and animations  
+
+### ⭐ Beautiful Modern UI  
+- Glassmorphism login page  
+- Hover-expand animated sidebar  
+- Stock cards with dropdown (3-dot menu)  
+- Vanish animation when unsubscribing  
+- Fully responsive  
+
+### 📦 No Backend Required  
+- All data stored in the browser  
+- Great for demos, assignments, and prototypes  
+
+---
+
+## 🏛️ Project Structure
+
+client/
+│── public/
+│── src/
+│ ├── components/
+│ │ ├── Login.jsx
+│ │ ├── Dashboard.jsx
+│ │ ├── StockCard.jsx
+│ │ ├── Toast.jsx
+│ ├── context/
+│ │ ├── UserContext.jsx
+│ ├── data/
+│ │ ├── supportedStocks.js
+│ ├── utils/
+│ │ ├── randomPrice.js
+│ ├── App.jsx
+│ ├── main.jsx
+│── package.json
+│── README.md
+
+
+🧠 How It Works
+1️⃣ Login
+
+Enter email → loads user data → redirects to dashboard.
+
+2️⃣ Subscribe to Stocks
+
+Click a stock button → instantly added to list.
+
+3️⃣ Real-Time Price Updates
+
+Every subscribed stock updates automatically every second.
+
+4️⃣ Unsubscribe
+
+Click the 3-dot menu → select Unsubscribe → card vanishes smoothly.
+
+5️⃣ Refresh Safe
+
+User stays logged in using LocalStorage.
