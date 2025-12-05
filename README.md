@@ -12,7 +12,7 @@ A modern, visually appealing stock monitoring dashboard built using **React + Vi
 
 
 ### **Dashboard – Subscribed Stocks**
-![Dashboard](./screenshots/gdash.png)
+![Dashboard](screenshots/gdash.jpg)
 
 
 
