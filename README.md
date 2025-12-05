@@ -4,8 +4,8 @@ A modern, visually appealing stock monitoring dashboard built using **React + Vi
 
 ---
 
-## 🚀 Live Demo  
-(Coming Soon)
+## 🚀 Check OUt 
+https://stock-broker-client-mocha.vercel.app
 
 ---
 
